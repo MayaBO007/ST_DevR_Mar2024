@@ -46,7 +46,7 @@ function timeline() {
                                             document.getElementById("endDayMsg").addEventListener("click", function () {
                                                 showWinnings()
                                                 setTimeout(() => {
-                                                    platform.goToUrl("days/dayThree/dayThree.html");
+                                                    moveToDay()
                                                 }, timeToFive())
                                                 setTimeout(() => {
                                                     hideWinnings();

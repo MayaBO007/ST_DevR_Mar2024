@@ -12,7 +12,7 @@ function moveToDay() {
                 } else {
                     problemOrient()
                 }
-            } else if (extractDeviceName(userAgent) == studySessionData.userDevice) {
+            } else if (extractDeviceName(userAgent) === studySessionData.userDevice) {
                 if ((studySessionData.doneDay1 === "doneDayOne") && (studySessionData.doneDay2 != "doneDayTwo")) {
                     if (studySessionData.doneDay2 === "") {
                         platform.goToUrl("days/dayTwo/dayTwo.html");
