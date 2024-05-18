@@ -22,6 +22,15 @@ timeoutCountStar = 0;
 saveAttemptStars = 0;
 starNum = null;
 
+redElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+blueElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
 
 redElement.addEventListener("touchstart", function () {
     allRedPressesStar.push(new Date().getTime() - milliseconds);

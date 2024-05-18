@@ -16,6 +16,16 @@ const responsesTrainingDataThree = {
     allChoices: allChoices
 };
 
+redElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+blueElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
 saveAttemptTrainingThree = 0;
 
 redElement.addEventListener("touchstart", function () {

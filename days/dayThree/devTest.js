@@ -66,6 +66,15 @@ function devQuestion() {
         });
     });
 }
+redElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+blueElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
 
 // function isString(input) {
 //     return typeof input === ('אדום' || 'כחול' || 'אדומות' || 'כחולות');

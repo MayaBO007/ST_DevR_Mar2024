@@ -46,6 +46,16 @@ function yellowPressSpeeds() {
     }
 }
 
+redElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+blueElement.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
 //let sessionIntervalSpeeds = null;
 let endSpeeds = null;
 let countSpeeds = 0;
